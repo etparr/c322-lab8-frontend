@@ -38,8 +38,9 @@
 </form>
 
 <script>
-async function handleSignUp(event) {
+async function handleSignUp() {
   const form = document.getElementById('signupForm');
+  event.preventDefault();
   const email = form.email.value;
   const username = form.username.value;
   const password = form.psw.value;
